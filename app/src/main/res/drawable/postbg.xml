@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Define the background shape with rounded corners -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <corners android:radius="20dp" /> <!-- Adjust the radius as needed -->
+        </shape>
+    </item>
+
+    <!-- Define the dotted pattern for the background -->
+    <item android:right="2dp" android:left="2dp" android:top="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="2dp"
+            android:color="#F10F0F"
+            android:dashWidth="50dp"
+            android:dashGap="4dp" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bottomnav">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navbar"/>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:context=".WelcomeScreen"-->
+<!--        android:padding="16dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:weightSum="10">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_weight=".1">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/welcomeTextView"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight=".3"-->
+<!--            android:text="Welcome,"-->
+<!--            android:textSize="24sp"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/DaudTextView"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight=".7"-->
+<!--            android:textColor="#FF8222"-->
+<!--            android:text="Daud"-->
+<!--            android:textSize="24sp"-->
+<!--            />-->
+
+<!--        </LinearLayout>-->
+<!--        &lt;!&ndash;    <ScrollView&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_height="0dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_weight="9">&ndash;&gt;-->
+
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_weight="3.5">-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Featured Items" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:layout_width="250dp"-->
+<!--                            android:layout_height="180dp"-->
+<!--                            android:background="@drawable/card_bg"-->
+
+<!--                            >-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:orientation="vertical">-->
+
+
+<!--                                <View-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="3"-->
+<!--                                    android:background="@color/black" />-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal"-->
+<!--                                    android:padding="5dp">-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Item Name" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="$10/hr" />-->
+
+
+<!--                                </LinearLayout>-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal">-->
+
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="start"-->
+<!--                                        android:src="@drawable/ic_location" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Islamabad"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="7th Mar"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                </LinearLayout>-->
+
+
+<!--                            </LinearLayout>-->
+
+
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:layout_width="250dp"-->
+<!--                            android:layout_height="180dp"-->
+<!--                            android:background="@drawable/card_bg"-->
+
+<!--                            >-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:orientation="vertical">-->
+
+
+<!--                                <View-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="3"-->
+<!--                                    android:background="@color/black" />-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+ <!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal">-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Item Name" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="$10/hr" />-->
+
+
+<!--                                </LinearLayout>-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal">-->
+
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="start"-->
+<!--                                        android:src="@drawable/ic_location" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Islamabad"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="7th Mar"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                </LinearLayout>-->
+
+
+<!--                            </LinearLayout>-->
+
+
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:layout_width="250dp"-->
+<!--                            android:layout_height="180dp"-->
+<!--                            android:background="@drawable/card_bg"-->
+
+<!--                            >-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:orientation="vertical">-->
+
+
+<!--                                <View-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="3"-->
+<!--                                    android:background="@color/black" />-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal">-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Item Name" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="$10/hr" />-->
+
+
+<!--                                </LinearLayout>-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal">-->
+
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="start"-->
+<!--                                        android:src="@drawable/ic_location" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Islamabad"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="7th Mar"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                </LinearLayout>-->
+
+
+<!--                            </LinearLayout>-->
+
+
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+
+<!--        </ScrollView>-->
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_weight="3">-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Your Items" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:layout_width="250dp"-->
+<!--                            android:layout_height="180dp"-->
+<!--                            android:background="@drawable/card_bg"-->
+
+<!--                            >-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:orientation="vertical">-->
+
+
+<!--                                <View-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="3.5"-->
+<!--                                    android:background="@color/black" />-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal"-->
+<!--                                    android:padding="5dp">-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Item Name" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="$10/hr" />-->
+
+
+<!--                                </LinearLayout>-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal">-->
+
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="start"-->
+<!--                                        android:src="@drawable/ic_location" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Islamabad"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="7th Mar"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                </LinearLayout>-->
+
+
+<!--                            </LinearLayout>-->
+
+
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:layout_width="250dp"-->
+<!--                            android:layout_height="180dp"-->
+<!--                            android:background="@drawable/card_bg"-->
+
+<!--                            >-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:orientation="vertical">-->
+
+
+<!--                                <View-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="3"-->
+<!--                                    android:background="@color/black" />-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal">-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Item Name" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="$10/hr" />-->
+
+
+<!--                                </LinearLayout>-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal">-->
+
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="start"-->
+<!--                                        android:src="@drawable/ic_location" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Islamabad"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="7th Mar"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                </LinearLayout>-->
+
+
+<!--                            </LinearLayout>-->
+
+
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:layout_width="250dp"-->
+<!--                            android:layout_height="180dp"-->
+<!--                            android:background="@drawable/card_bg"-->
+
+<!--                            >-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:orientation="vertical">-->
+
+
+<!--                                <View-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="3"-->
+<!--                                    android:background="@color/black" />-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal">-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Item Name" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="$10/hr" />-->
+
+
+<!--                                </LinearLayout>-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal">-->
+
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="start"-->
+<!--                                        android:src="@drawable/ic_location" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Islamabad"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="7th Mar"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                </LinearLayout>-->
+
+
+<!--                            </LinearLayout>-->
+
+
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+
+<!--        </ScrollView>-->
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_weight="2"-->
+<!--            >-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView3"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:text="Listed Items" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:layout_width="250dp"-->
+<!--                            android:layout_height="180dp"-->
+<!--                            android:background="@drawable/card_bg"-->
+
+<!--                            >-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:orientation="vertical">-->
+
+
+<!--                                <View-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="3"-->
+<!--                                    android:background="@color/black" />-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal"-->
+<!--                                    android:padding="5dp">-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Item Name" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="$10/hr" />-->
+
+
+<!--                                </LinearLayout>-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal">-->
+
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="start"-->
+<!--                                        android:src="@drawable/ic_location" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Islamabad"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="7th Mar"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                </LinearLayout>-->
+
+
+<!--                            </LinearLayout>-->
+
+
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:layout_width="250dp"-->
+<!--                            android:layout_height="180dp"-->
+<!--                            android:background="@drawable/card_bg"-->
+
+<!--                            >-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:orientation="vertical">-->
+
+
+<!--                                <View-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="3"-->
+<!--                                    android:background="@color/black" />-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal">-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Item Name" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="$10/hr" />-->
+
+
+<!--                                </LinearLayout>-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal">-->
+
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="start"-->
+<!--                                        android:src="@drawable/ic_location" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Islamabad"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="7th Mar"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                </LinearLayout>-->
+
+
+<!--                            </LinearLayout>-->
+
+
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <com.google.android.material.card.MaterialCardView-->
+<!--                            android:layout_width="250dp"-->
+<!--                            android:layout_height="180dp"-->
+<!--                            android:background="@drawable/card_bg"-->
+
+<!--                            >-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:orientation="vertical">-->
+
+
+<!--                                <View-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="3"-->
+<!--                                    android:background="@color/black" />-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal">-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Item Name" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="$10/hr" />-->
+
+
+<!--                                </LinearLayout>-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="0dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:orientation="horizontal">-->
+
+<!--                                    <ImageView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_weight="1"-->
+<!--                                        android:gravity="start"-->
+<!--                                        android:src="@drawable/ic_location" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="4"-->
+<!--                                        android:text="Islamabad"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="0dp"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:layout_weight="2"-->
+<!--                                        android:gravity="end"-->
+<!--                                        android:text="7th Mar"-->
+<!--                                        android:textColor="#666666" />-->
+
+
+<!--                                </LinearLayout>-->
+
+
+<!--                            </LinearLayout>-->
+
+
+<!--                        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+
+<!--        </ScrollView>-->
+
+<!--        &lt;!&ndash;</ScrollView>&ndash;&gt;-->
+
+<!--    </LinearLayout>-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/mybottommenu"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/navbar"/>
+
+
+
+
+</RelativeLayout>

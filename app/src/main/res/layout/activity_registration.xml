@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+
+        android:orientation="vertical">
+
+<!--        <ImageView-->
+<!--            android:layout_width="280dp"-->
+<!--            android:layout_height="94dp"-->
+<!--            android:background="@drawable/spot_it"-->
+<!--            android:padding="20dp" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="3dp"
+            android:text="Registration"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Name"
+            android:textSize="22dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:ems="10"
+            android:hint="Enter name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textSize="24dp"
+            android:textStyle="normal" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Email"
+            android:textSize="22dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/signUpEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:ems="10"
+            android:hint="Enter email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textSize="24dp"
+            android:textStyle="normal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:text="Password"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/signUpPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:ems="10"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Contact Number"
+            android:textSize="22dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:ems="10"
+            android:hint="Enter contact number"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="24dp"
+            android:textStyle="normal" />
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:text="Country"-->
+<!--            android:textSize="22dp"-->
+<!--            android:textStyle="normal" />-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:hint="@string/select_country">-->
+
+<!--                        <AutoCompleteTextView-->
+<!--                            android:id="@+id/auto_complete_country"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="12dp"-->
+<!--                            android:contentDescription="Choose your country" /> &lt;!&ndash; Add a meaningful description &ndash;&gt;-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:text="City"-->
+<!--            android:textSize="22dp"-->
+<!--            android:textStyle="normal" />-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:hint="@string/select_city">-->
+
+<!--                        <AutoCompleteTextView-->
+<!--                            android:id="@+id/auto_complete_city"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/auto_complete_country"-->
+<!--                            android:layout_marginTop="8dp"-->
+<!--                            android:contentDescription="Choose your city" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--        <Spinner-->
+        <!--            android:id="@+id/dropdown"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:background="@drawable/rounded_spinner_bg"-->
+        <!--            android:textAlignment="center"/>-->
+
+
+        <!--        <EditText-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="12dp"-->
+        <!--            android:background="@drawable/rounded_edittext_bg"-->
+        <!--            android:ems="10"-->
+        <!--            android:hint=""-->
+        <!--            android:inputType="number"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:textSize="30dp"-->
+        <!--            android:textStyle="normal" />-->
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Country"
+                android:textSize="22dp"
+                android:layout_width="match_parent"
+                android:textStyle="normal" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/country_text_input_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/select_country">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/auto_complete_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:contentDescription="Choose your country" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="City"
+                android:textSize="22dp"
+                android:textStyle="normal" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/city_text_input_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/select_city">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/auto_complete_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/auto_complete_country"
+                        android:layout_marginTop="8dp"
+                        android:contentDescription="Choose your city" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+            android:id="@+id/signUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            app:cornerRadius="15dp" />
+
+        <TextView
+            android:id="@+id/loginTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+</RelativeLayout>

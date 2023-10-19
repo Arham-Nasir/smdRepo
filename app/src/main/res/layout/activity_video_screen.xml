@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".video_screen">
+
+    <LinearLayout
+        android:id="@+id/headerPart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D6D6D6"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="50dp">
+
+        <!-- Icons for cross, brightness, and clock -->
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="100dp"
+            android:src="@drawable/close" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/brightness"
+            android:layout_marginEnd="100dp" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/clock" />
+    </LinearLayout>
+
+
+    <!-- Gray upper part -->
+    <LinearLayout
+        android:id="@+id/upperPart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/headerPart"
+        android:background="#D6D6D6"
+        android:orientation="vertical">
+
+        <!-- Your content goes here -->
+
+    </LinearLayout>
+
+    <!-- White footer with icons and buttons -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <!-- Icons for uploaded images/files, recording, and front/back camera switch -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/gallery"
+                android:layout_marginStart="37dp"
+                android:layout_marginEnd="50dp"/>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/button"
+                android:layout_marginEnd="50dp"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/camera"
+                android:layout_marginEnd="16dp"/>
+
+        </LinearLayout>
+
+        <!-- Text options for Photos and Videos -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:id="@+id/photoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:clickable="true"
+                android:onClick="onPhotoTextClick"
+                android:padding="3dp"
+                android:text="Photo"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/videoTextView"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:onClick="onVideoTextClick"
+                android:padding="3dp"
+                android:text="Video"
+                android:textAlignment="center"
+                android:background="@drawable/orange_bg"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
