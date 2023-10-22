@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#3498db</color>
+    <color name="colorPrimaryDark">#2980b9</color>
+    <color name="colorAccent">#2ecc71</color>
+    <color name="textColorPrimary">#333333</color>
+    <color name="backgroundColor">#ffffff</color>
+    <color name="buttonBackgroundColor">#e74c3c</color>
+    <color name="buttonTextColor">#ffffff</color>
+    <color name="dividerColor">#bdc3c7</color>
+    <color name="statusBarColor">#2c3e50</color>
+
 </resources>

@@ -17,12 +17,6 @@
             android:name=".profile"
             android:exported="false" />
         <activity
-            android:name=".message_list_other"
-            android:exported="false" />
-        <activity
-            android:name=".message_list_me"
-            android:exported="false" />
-        <activity
             android:name=".chat"
             android:exported="false" />
         <activity
